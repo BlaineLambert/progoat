@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 
 <html>
-<body>
 
-<h1><img src="aligoat.jpg" style="float:right;width:150px;height:150px;">
+<style>
+  .image-container {
+      position: relative; /* Establishes a positioning context for the container */
+      width: 300px;
+      height: 200px;
+      border: 1px solid #000;
+    }
+
+    .moving-image {
+      position: absolute; /* Position the image absolutely within the container */
+      top: 600px; /* Distance from the top of the container */
+      left: 680px; /* Distance from the left of the container */
+    }
+
+  body {
+      background-color: lightsteelblue;
+}
+</style>
+<body>
+<div class="image-container">
+    <img class="moving-image" src="aligoat2.jpg">
+  </div>
+<h1><img src="aligoat.jpg" style="float:right;width:300px;height:300px;">
     Muhammad Ali was known as "<i><u>one of the best fighters in the world</u></i>", with 56 wins, 3 belts, and defended his title 19 times!
 </h1>
 <p>
@@ -28,14 +49,34 @@
   </table>
 
 <p>
-    <img src="OIP.jfif" style="float:left;width:150px;height:150px;"> His life came to a end in 2016 but not before being great friends with another fighter <i>Mike Tyson</i>. Early in his life, he was known as <i>Cassius Clay</i>. He converted to Sunni Islam just 15 years before his passing, as he believed his Christian upbring was <q>empty.</q>
+    <img src="OIP.jfif" style="float:left;width:150px;height:150px;"> His life came to a end in 2016 but not before being great friends with another fighter <i>Mike Tyson</i>. Early in his life, he was known as <i>Cassius Clay</i>. He converted to Sunni Islam just 15 years before his passing, as he believed his <q>Christian upbringing was empty.</q>
 </p>
 
-<iframe width="320" height="200" padding-left="100" src="https://www.youtube.com/embed/6vxvElbaYZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<table>
+  <tr>
+    <th>Boxing</th>
+  </tr>
+  <tr>
+    <td><iframe width="320" height="200" padding-left="100" src="https://www.youtube.com/embed/6vxvElbaYZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </td>
+    <td></td>
+  </tr>
+</table>
 
-<p>
-  <img src="poster.jpg" style="right:left;">
-</p>
+<table>
+  <tr>
+    <th>Quotes</th>
+  </tr>
+  <tr>
+    <td>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/076sG0IJhPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+
+
 
 </body>
 </html>
