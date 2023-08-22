@@ -12,8 +12,38 @@
       audio.play();
     }
   </script>
-</head>
+  </head>
 <style>
+    .moving-text4 {
+    position: absolute;
+    top: 520px;
+    left: 300px;
+    }
+    .moving-video {
+    position: absolute;
+    top: 60px;
+    left: 1200px;
+    }
+    .moving-video2 {
+    position: absolute;
+    top: 300px;
+    left: 1200px;
+    }
+    .moving-text3 {
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    }
+    .moving-text2 {
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    }
+    .moving-text3 {
+    position: absolute;
+    top: 500px;
+    left: 10000px;
+    }
     .moving-text {
       position: absolute; /* Position the text absolutely within the container */
       top: 400px; /* Distance from the top of the container */
@@ -21,8 +51,13 @@
     }
     .moving-image {
       position: absolute; /* Position the image absolutely within the container */
-      top: 430px; /* Distance from the top of the container */
-      left: 750px; /* Distance from the left of the container */
+      top: 25px; /* Distance from the top of the container */
+      left: 380px; /* Distance from the left of the container */
+    }
+    .moving-image2 {
+      position: absolute; /* Position the image absolutely within the container */
+      top: 360px; /* Distance from the top of the container */
+      left: 25px; /* Distance from the left of the container */
     }
 
   body {
@@ -30,80 +65,56 @@
 }
 </style>
 <body>
-  <div class="text-container">
-    <p class="moving-text"></p>
-  </div>
-  <audio controls autoplay >
-    <source src="med.mp3" type="audio/mpeg">
-  </audio>
-<div class="image-container">
-    <img class="moving-image" src="aligoat2.jpg">
-  </div>
-<h1><img src="aligoat.jpg" style="float:right;width:300px;height:300px;">
-    Muhammad Ali was known as "<i><u>one of the best fighters in the world</u></i>", with 56 wins, 3 belts, and defended his title 19 times!
-</h1>
-<p>
-    His accomplishments during his life were life lifting for some.
-</p>
-
-<table>
-    <tr>
-      <th>Boxing</th>
-      <th>Activist</th>
-    </tr>
-    <tr>
-      <td><ul>
-        <li>Presidential Medal of Freedom</li>
-        <li>Boxer of the Year six times</li>
-        <li>Becoming the first and only three-time lineal World Heavyweight Champion</li>
-      </ul></td>
-      <td><ul>
-        <li>His own museum opened by his wife is on the civil rights trail</li>
-        <li>Author Ashe Courage Award</li>
-        <li>Martin Luther King Award</li>
-      </ul></td>
-    </tr>
-  </table>
-
-<p>
-    <img src="OIP.jfif" style="float:left;width:150px;height:150px;"> His life came to a end in 2016 but not before being great friends with another fighter <i>Mike Tyson</i>. Early in his life, he was known as <i>Cassius Clay</i>. He converted to Sunni Islam just 15 years before his passing, as he believed his <q>Christian upbringing was empty.</q>
-</p>
-
-<table>
-  <tr>
-    <th>Boxing</th>
-    <th>Speeches</th>
-  </tr>
-  <tr>
-    <td>
-      <iframe width="320" height="200" src="https://www.youtube.com/embed/6vxvElbaYZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </td>
-    <td><ul>
-      <li><button onclick="playAudio()">Play Audio</button>
-        <audio id="myAudio">
-        <source src="underdogwithreporters.mp3" type="audio/mpeg"></audio>
-      </li>
-      <li><button onclick="playAudio2()">Play Audio</button>
-        <audio id="myAudio2">
-        <source src="inringwithmusic.mp3" type="audio/mpeg"></audio>
-      </li>
-    </ul></td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <th>Quotes</th>
-  </tr>
-  <tr>
-    <td>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/076sG0IJhPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </td>
-  </tr>
-</table>
-
-
-
-
+    <div class="text-container">
+      <p class="moving-text4"><a href="https://en.wikipedia.org/wiki/Muhammad_Ali" target="__blank">Muhammad Ali</a> was known as "<i><u>one of the best fighters in the world</u></i>",
+        with 56 wins, 3 belts, and defended his title 19 times! His <br> accomplishments during his life were
+        life lifting for some. His life came to a end in 2016 but not before being great friends with another <br> 
+        fighter <i>Mike Tyson</i>. Early in his life, he was known as <i>Cassius Clay</i>. He converted to Sunni Islam in 1975, 
+        <br> as he believed his <q>Christian upbringing was empty.</q>
+      </p>
+    </div>
+    <audio controls autoplay >
+      <source src="med.mp3" type="audio/mpeg">
+    </audio>
+  <div class="image-container">
+      <img class="moving-image" src="aligoat2.jpg">
+    </div>
+    <div class="text-container">
+        <p class="moving-text2"><table>
+            <tr>
+              <th>Boxing</th>
+            </tr>
+            <tr>
+              <td><ul>
+                <li>Presidential Medal of Freedom</li>
+                <li>Boxer of the Year six times</li>
+                <li>Becoming the first and only three-time <br> lineal World Heavyweight Champion</li>
+              </ul></td>
+            </tr>
+          </table></p>
+      </div>
+      <div class="text-container">
+        <p class="moving-text2"><table>
+            <tr>
+              <th>Activist</th>
+            </tr>
+            <tr>
+              <td><ul>
+                <li>His own <a href="https://alicenter.org/" target="_blank">museum</a> opened by his wife is <br> on the civil rights trail</li>
+                <li>Author Ashe Courage Award</li>
+                <li>Martin Luther King Award</li>
+              </ul></td>
+            </tr>
+          </table></p>
+      </div>
+      <div class="image-container">
+        <img class="moving-image2" src="aligoat.jpg" width="250" height="250">
+      </div>
+      <div class="image-container">
+        <iframe class="moving-video" width="320" height="200" src="https://www.youtube.com/embed/6vxvElbaYZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="image-container">
+        <iframe class="moving-video2" width="320" height="200" src="https://www.youtube.com/embed/076sG0IJhPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
 </body>
 </html>
