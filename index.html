@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 
 <html>
-
-<style>
-  .image-container {
-      position: relative; /* Establishes a positioning context for the container */
+<head>
+  <script>
+    function playAudio() {
+      var audio = document.getElementById("myAudio");
+      audio.play();
     }
-
+    function playAudio() {
+      var audio = document.getElementById("myAudio2");
+      audio.play();
+    }
+  </script>
+</head>
+<style>
+    .moving-text {
+      position: absolute; /* Position the text absolutely within the container */
+      top: 50px; /* Distance from the top of the container */
+      left: 100px; /* Distance from the left of the container */
+    }
     .moving-image {
       position: absolute; /* Position the image absolutely within the container */
-      top: 310px; /* Distance from the top of the container */
-      left: 680px; /* Distance from the left of the container */
+      top: 430px; /* Distance from the top of the container */
+      left: 1130px; /* Distance from the left of the container */
     }
 
   body {
@@ -18,8 +30,14 @@
 }
 </style>
 <body>
+  <div class="text-container">
+    <p class="moving-text"></p>
+  </div>
+  <audio controls autoplay >
+    <source src="med.mp3" type="audio/mpeg">
+  </audio>
 <div class="image-container">
-    <img class="moving-image" src="aligoat2.jpg">
+    <img class="moving-image" src="aligoat2.jpg" width="375" height="250">
   </div>
 <h1><img src="aligoat.jpg" style="float:right;width:300px;height:300px;">
     Muhammad Ali was known as "<i><u>one of the best fighters in the world</u></i>", with 56 wins, 3 belts, and defended his title 19 times!
@@ -54,11 +72,22 @@
 <table>
   <tr>
     <th>Boxing</th>
+    <th>Speeches</th>
   </tr>
   <tr>
-    <td><iframe width="320" height="200" padding-left="100" src="https://www.youtube.com/embed/6vxvElbaYZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <td>
+      <iframe width="320" height="200" src="https://www.youtube.com/embed/6vxvElbaYZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </td>
-    <td></td>
+    <td><ul>
+      <li><button onclick="playAudio()">Play Audio</button>
+        <audio id="myAudio">
+        <source src="underdogwithreporters.mp3" type="audio/mpeg"></audio>
+      </li>
+      <li><button onclick="playAudio()">Play Audio</button>
+        <audio id="myAudio2">
+        <source src="inringwithmusic.mp3" type="audio/mpeg"></audio>
+      </li>
+    </ul></td>
   </tr>
 </table>
 
@@ -70,7 +99,6 @@
     <td>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/076sG0IJhPg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </td>
-    <td></td>
   </tr>
 </table>
 
